@@ -1,0 +1,7 @@
+version: "3"
+services:
+  arm-builder:
+    build: .
+    privileged: true
+    volumes:
+      - .:/setup
