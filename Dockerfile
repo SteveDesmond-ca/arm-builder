@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM ubuntu:xenial
 
 RUN apt-get update \
   && apt-get -y install \
