@@ -6,8 +6,10 @@ mount --bind /dev/pts /rootfs/dev/pts
 mount --bind /proc /rootfs/proc
 chroot /rootfs sh -c "apt-get update \
     && apt-get install -y \
+        libglib2.0 \
+        libreadline-dev \
+        libsecret-1-dev \
         libx11-dev \
         libxkbfile-dev \
         pkg-config \
-        libsecret-1-dev \
-        libglib2.0"
+        zlib1g-dev"
