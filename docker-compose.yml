@@ -1,7 +1,10 @@
 version: "3"
 services:
-  arm-builder:
-    build: .
+  base:
+    build: base
     privileged: true
-    volumes:
-      - .:/setup
+  builder:
+    build: builder
+    depends_on:
+      - base
+    privileged: true

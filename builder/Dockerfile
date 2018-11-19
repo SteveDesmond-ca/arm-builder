@@ -1,14 +1,11 @@
-FROM ubuntu:xenial
+FROM vtsv/arm:base
 
 RUN apt-get update \
   && apt-get -y install \
-    apt-utils \
     bash-completion \
     bison \
     build-essential \
     curl \
-    debootstrap \
-    dos2unix \
     fakeroot \
     flex \
     gawk \
@@ -18,7 +15,6 @@ RUN apt-get update \
     libsecret-1-dev \
     libpython2.7 \
     nano \
-    qemu-user-static \
     pkg-config-arm-linux-gnueabihf \
     python \
     rpm
