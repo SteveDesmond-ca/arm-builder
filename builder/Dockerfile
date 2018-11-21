@@ -19,6 +19,6 @@ RUN apt-get update \
     python \
     rpm
     
-COPY setup.sh .
-RUN dos2unix setup.sh
-ENTRYPOINT [ "./setup.sh" ]
+COPY install.sh .
+RUN dos2unix install.sh
+ENTRYPOINT [ "./install.sh" ]

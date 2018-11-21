@@ -6,7 +6,7 @@ RUN apt-get update \
     debootstrap \
     dos2unix \
     qemu-user-static
-    
+
 COPY setup.sh .
 RUN dos2unix setup.sh
 ENTRYPOINT [ "./setup.sh" ]
